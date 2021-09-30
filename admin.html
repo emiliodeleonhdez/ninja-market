@@ -101,28 +101,41 @@
         <div class="preview-card">
           <article class="card-anime">
             <header class="card-anime-header d-flex justify-content-between mb-2">
-              <img class="img-munko" src="./assets/deku.png" alt="">
+              <div class="wrapper-image-munko">
+                <img id="image-prod" class="img-munko"
+                  src="https://cdn.shopify.com/s/files/1/0025/9384/9457/products/funko-pop-animation-my-hero-academia-eri-other-3_1000x.jpg?v=1632851706"
+                  alt="">
+              </div>
               <div class="sizes-munkos d-flex flex-column justify-content-between">
-                <div class="large d-flex align-items-center">
-                  <img src="./assets/size-l.svg" alt="">
-                  <p><span>G</span>rande</p>
+                <div class="large hidden">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/size-l.svg" alt="">
+                    <p><span>G</span>rande</p>
+                  </div>
                 </div>
-                <div class="medium d-flex align-items-center">
-                  <img src="./assets/size-l.svg" alt="">
-                  <p><span>M</span>ediano</p>
+                <div class="medium hidden">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/size-l.svg" alt="">
+                    <p><span>M</span>ediano</p>
+                  </div>
+
                 </div>
-                <div class="small d-flex align-items-center">
-                  <img src="./assets/size-l.svg" alt="">
-                  <p><span>P</span>equeño</p>
+                <div class="small hidden">
+                  <div class="d-flex align-items-center">
+                    <img src="./assets/size-l.svg" alt="">
+                    <p><span>P</span>equeño</p>
+                  </div>
                 </div>
               </div>
             </header>
             <section class="card-anime-body">
-              <h3>¡Deku Pop!</h3>
-              <p>Izuku Midoriya, also known by his hero name Deku, is a fictional character and the main protagonist of
+              <h3 id="name-prod">¡Deku Pop!</h3>
+              <p id="desc-prod">
+                Izuku Midoriya, also known by his hero name Deku, is a fictional character and the main
+                protagonist of
                 the manga series
                 My Hero Academia,</p>
-              <h4>$190.00 <span>MXN</span> </h4>
+              <h4>$ <span id="price-prod">190.00</span> <span>MXN</span> </h4>
             </section>
             <footer class="card-anime-footer d-flex justify-content-between mt-4">
               <div class="heart">
