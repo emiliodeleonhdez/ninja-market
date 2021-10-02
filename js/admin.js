@@ -2,11 +2,11 @@ let formularioAgregar = document.querySelector("#form-add_product")
 formularioAgregar.addEventListener("submit", (event)=> {
 
     event.preventDefault()
-    let producto = {tamanos:[]}
+    let producto = {}
     formularioAgregar.querySelectorAll(".form-control").forEach((input)=> {
         if(input.type === "checkbox"){
             if(input.checked){
-                producto.tamanos = [...producto.tamanos,input.value] // Asignacion propiedad tamanos con spread operator 
+                producto[input.name] = [...producto[input.name],input.value] // Asignacion propiedad tamanos con spread operator 
             }
         }else{
             producto[input.name] = input.value // 
